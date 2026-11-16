@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+    <style>
+        p {
+            color: blue;
+        }
+        div {
+            color: red;
+        }
+        span {
+            color: rgb(10, 211, 23);
+        }
+        
+        .red {
+            color: red;
+        }
+        .bule {
+            color: blue;
+        }
+        .font32 {
+            font-size: 32px;
+        }
+
+        #div1 {
+            font-size: 40px;
+        }
+
+        .red, .bule, a, #div1{ /* 逗号隔开   或者 */
+            font-size: 50px;
+        }
+        .red.bule  { /* 无空格紧邻    并且 */
+            font-size: 60px;
+        }
+        .red .blue { /* 用空格隔开 */
+            font-size: 70px; /* 里面的该子孙：class=red里面的class=blue */
+        }
+        .red>.blue { /* >隔开 */
+            font-size: 80px; /* 里面的该儿子：class=red 下一级的class=blue */
+        }
+
+        * {
+            color: red;
+            font: bold 40px "Fira Sans", sans-serif;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <p style="color: rgb(234, 10, 185);">一个文本</p>
+    <p class="red">一个段落</p>
+    <div class="red font32" id="div1">我是一个div111</div>
+    <div class="blue font32">我是一个div333</div>
+    <a href="#" class="red">超链接1</a>
+    <a href="#">超链接2</a>
+    <a href="#">超链接3</a>
+    <div>
+        <span class ="blue">span111</span>
+        <span>span222</span>
+        <span>span333</span>
+    </div>
+    <div>我是一个div222</div>
+
+    <p>0
+        
+        
+        1
+    </p>
+    <p>0 1</p>
+    <p>      1</p>
+
+</body>
+</html>

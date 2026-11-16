@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li a {
+            color: rgb(14, 222, 42);
+        }
+        li a {
+            color: rgb(233, 70, 11);
+        }
+        /* 表示子孙 */
+        ul a {
+            color: #008000;
+        }
+        /* 表示相邻 */
+        li a {
+            color: blue;
+        }
+        
+        ol>li {
+            color: purple;
+        }
+        ol li {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="font32">我是一个div，class为font32</div>
+    <div class="font32">我是一个div，class为font32</div>
+    <div><a href="#">我是一个div</a></div>
+    <ul>
+        <li>aaa</li>
+        <li>bbb</li>
+        <li><a href="#">ccc</a></li>
+    </ul>
+    <ol>
+        <li>111</li>?
+        <li>222</li>
+        <li>333</li>
+    </ol>
+
+    <ol>
+    <li>苹果</li>
+    <li>香蕉</li>
+    <li>
+        水果分类
+        <ul>
+            <li>草莓</li>
+            <li><a href="#">222</a>葡萄</li>
+            111
+        </ul>
+    </li>
+</ol>
+</body>
+</html>

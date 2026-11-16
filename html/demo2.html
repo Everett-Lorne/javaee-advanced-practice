@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快速开发</title>
+</head>
+<body>
+    <!-- 无语义标签 -->
+     <div>我是divaaa
+        <span>我是span111</span>
+        <span>我是span222</span>
+        <span>我是span333</span>
+     </div>
+
+     <div>我是divbbb</div>
+     <div>我是divccc</div>
+     <div>我是divddd</div>
+
+     <span>我是span444</span>
+     <span>我是span555</span>
+     <span>我是span666</span>
+
+    <!-- 表单标签-->
+    <form action="demo1.html" method="get">
+        姓名：<input type="text" name="userName" placeholder="请输入姓名"><br/>
+        密码：<input type="password" name="password" id=""><br/>
+        性别：<input type="radio" name="gender" id="male" value="0"> <label for="male">男</label>
+              <input type="radio" name="gender" id="female" value="1"> <label for="female">女</label> <br/>
+        兴趣：<input type="checkbox" name="chec" id="ball" value="1"> <label for="ball">排球</label>
+              <input type="checkbox" name="chec" value="2"> 篮球
+              <input type="checkbox" name="chec" value="3"> 乒乓球
+              <input type="checkbox" name="chec" value="4"> 羽毛球 <br/>
+        学历：<select name="sel">
+                <option value="1">小学</option>
+                <option value="2">初中</option>
+                <option value="3">高中</option>
+                <option value="4" selected="selected">高中及以上</option>
+              </select> <br/>
+        个人简介：<textarea name="introduction" rows="10" cols="100"> 12
+            345 </textarea>
+            <br/>
+            <input type="button" value="注册1"><br/>
+            <button>注册2</button><br/>
+            <input type="submit" value="注册3">
+    </form>
+
+    <!-- 表格标签 -->
+    <table border="1" cellspacing="100" align="center">
+        <tr>
+            <td>张三</td>
+            <td>李四</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+        </tr>
+    </table>
+
+     <table align="center" border="1" cellpadding="100" cellspacing="30">
+        <tr>
+            <td rowspan="20">aaa</td>
+            <td colspan="2">bbb</td>
+        </tr>
+        <tr>
+            <td>111</td>
+            <td>222</td>
+            <td>333</td>
+        </tr>
+     </table>
+
+     <table border="1px" cellspacing="0px" cellpadding="0px" align="center">
+        <tr>
+            <td rowspan="3">aaa</td>
+            <td colspan="2">bbb</td>
+            </td>111</td>
+        </tr>
+        <tr>
+            <td>ccc</td>
+            <td>ddd</td>
+            <td rowspan="2">222</td>
+        </tr>
+        <tr>
+            <td>eee</td>
+            <td>fff</td>
+            <td>333</td>
+        </tr>
+    </table>
+
+    <!-- 超链接 -->
+     <a href="https://www.baidu.com/Index.htm" target="_blank">百度</a><br/>
+     <a href="demo1.html" target="_self">点击后会进入到demo1.html</a><br/>
+     <a href="test.zip" target="_blank">点击后会下载test.zip</a><br/>
+     <a href="./test.zip" target="_blank">点击后会下载test.zip</a><br/>
+     <a href="#" target="_blank">空链接 </a><br/>
+     <a href="#">空链接</a><br/>
+
+    <!-- 图片标签 -->
+     <br/>
+     <img src="images/cat.jpg" alt="这是一只小猫" 
+     width="500px" height="500px" border="1px"/><br/>
+     <img src="./images/cat.jpg" alt="这是一只小猫"><br/>
+     <img src="./rose.jpg"/> <br/>
+     <img src="rose.jpg" alt="这是一朵玫瑰"/> <br/>
+     <img src="D:\Code/JavaEE-Advanced/javaee-advanced-practice/html/images/cat.jpg" alt="这是一只小猫" width="500px" height="500px" border="1px"/><br/>
+     <img src="https://www.bing.com/th/id/OIP._L5v1meT8yNylThtWbAFvAHaE8?w=286&h=191&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3&r=0" alt=""/><br/>
+
+    <!-- 换行标签 -->
+    <br/>
+    这是一个br标签<br/>
+    这是一个br标签<br/>
+    这是一个br标签<br/>
+
+
+    <!-- 段落标签 -->
+     <p>这是一个段落</p>
+     <p>这是一个<br/>段落</p>
+     <p>这是
+        一个段落</p>
+     
+        <p>这是一
+        个段落</p>
+     
+   <p>这是一个    段落</p>
+
+    <!-- 标题标签 -->
+    <h1>一级标题</h1>
+    <h2>二级标题</h2>
+    <h3>三级标题</h3>
+    <h4>四级标题</h4>
+    <h5>五级标题</h5>
+    <h6>六级标题</h6>
+</body>
+</html>
